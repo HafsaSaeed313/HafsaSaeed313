@@ -774,20 +774,12 @@ h2{
         width: 160px;
         height: 35px;
         font-size: 12px;
-        paddind-bottom: 10px
+        padding-bottom: 10px
     }
 
     .home-sec1 a{
         width: 35px;
         margin: 10px;
-    }
-
-    .logo img{
-        height: 120px;
-        width: 120px;
-        margin-top: 0px;
-        margin-right: 1px;
-        position: relative;
     }
 
     .About-text h2{
