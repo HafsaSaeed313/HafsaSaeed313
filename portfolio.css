@@ -767,10 +767,14 @@ h2{
         font-weight: 400;
     }
 
+    .logo{
+        display: none
+    }
     .btn-box{
         width: 160px;
         height: 35px;
         font-size: 12px;
+        paddind-bottom: 10px
     }
 
     .home-sec1 a{
