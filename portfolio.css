@@ -777,6 +777,9 @@ h2{
         padding-bottom: 10px
     }
 
+    .layer h5{
+        font-size: 5px;
+    }
     .home-sec1 a{
         width: 35px;
         margin: 10px;
@@ -793,7 +796,7 @@ h2{
         font-weight: 200;
         margin-left: 50px;
     }
-
+     
     .progress-container{
         margin-left: 200px;
     }
