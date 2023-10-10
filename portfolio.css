@@ -774,7 +774,7 @@ h2{
         width: 200px;
         height: 35px;
         font-size: 15px;
-        padding-bottom: 10px
+        padding: auto;
     }
 
     .layer h5{
