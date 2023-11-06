@@ -29,7 +29,7 @@ body{
   .slider {
     position: absolute;
     cursor: pointer;
-    top: 20;
+    top: 15;
     bottom: 0;
     background-color: #ccc;
     -webkit-transition: 0.4s;
