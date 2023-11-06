@@ -259,9 +259,10 @@ section{
     flex-wrap: wrap;
 }
 
-.container1{
+#skills{
+    align-items: center;
+    justify-content: center;
     margin-top: 160px;
-    margin-left: 280px;
 }
 .heading1{
     text-align: center;
