@@ -6,8 +6,8 @@
     font-family: sans-serif;
 }
 body{
-    color: rgb(128, 221, 240);
-    background-color: rgb(4, 57, 51);
+    color: #f9c905;
+    background-color: #000000;
 }
 
 .header{
@@ -53,7 +53,7 @@ body{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #5892c1;
   }
   
   input:checked + .slider:before {
@@ -62,15 +62,12 @@ body{
     transform: translateX(46px);
   }
 
-  .dark-mode {
-    background-color: #556661;
-    color: #fff;
-  }
+  
 
 .title{
     position: relative;
     font-size: 45px;
-    color: rgb(91, 200, 233);
+    color: #f9c905;
     text-decoration: none;
     font-weight: 400;
     cursor: default;
@@ -81,7 +78,7 @@ body{
 .navbar a {
     display: inline-block;
     font-size: 25px;
-    color: rgb(107, 238, 240);
+    color: #f6f6f4;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -93,8 +90,7 @@ body{
    
 }
 .navbar a:hover{
-    color: rgb(168, 222, 31);
-    font-size: 30px;
+    color: #ffcd04;
 }
 .home{
     position: relative;
@@ -117,6 +113,7 @@ body{
 }
 .home-content{
     max-width: 600px;
+    margin-top: 90px;
 }
 .home-content h3{
     font-size: 32px;
@@ -157,7 +154,7 @@ body{
     animation-delay:calc(.2s * var(--i));
 }
 .home-sec1 a:hover{
-    background: greenyellow;
+    background: rgb(208, 215, 58);
     color: black;
     box-shadow: 0 0 20px yellow;
 }
@@ -165,12 +162,12 @@ body{
     margin-bottom: 30px;
 }
 .home-content span{
-    color: greenyellow;
+    color: rgb(248, 255, 47);
 }
 .btn-box {
     display: inline-block;
     padding: 12px 24px;
-    background: greenyellow;
+    background: rgb(255, 255, 47);
     border-radius: 40px;
     font-size: 16px;
     color: black;
@@ -182,9 +179,9 @@ body{
    
 }
 .btn-box:hover{
-    box-shadow: 0 0 5px rgb(77, 12, 141),
-    0 0 25px yellowgreen, 0 0 50px yellowgreen,
-    0 0 100px yellowgreen, 0 0 200px yellowgreen;
+    box-shadow: 0 0 3px rgb(77, 12, 141),
+    0 0 20px rgb(205, 195, 50), 0 0 20px rgb(195, 205, 50),
+    0 0 20px rgb(205, 184, 50), 0 0 20px rgb(200, 205, 50);
 }
 
 #content{
@@ -296,8 +293,8 @@ body{
 }
 .read:hover{
     box-shadow: 0 0 5px rgb(77, 12, 141),
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 75px cyan, 0 0 100px cyan;
+    0 0 25px cyan, 0 0 35px cyan,
+    0 0 45px cyan, 0 0 55px cyan;
 }
 section{
     display: flex;
@@ -516,52 +513,37 @@ h2{
     content: counter(percentage) '%';
   }
   
-  .col-1 {
+  .col-1, .col-2, .col-3, .col-4 {
     background: 
-    radial-gradient(closest-side, rgb(132, 4, 126), transparent 80% 100%, white 0),
-    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-  animation: col-1-progress 2s 1 forwards;
-}
+      radial-gradient(closest-side, rgb(255, 223, 0), transparent 80% 100%, white 0), /* Golden background */
+      conic-gradient(gold calc(var(--progress-value) * 1%), orange 0); /* Golden conic-gradient */
+    animation: progress-animation 2s 1 forwards;
+  }
+
+
+  
   
   .col-1::before {
     animation: col-1-progress 2s 1 forwards;
   }
   
-  .col-2 {
-    background: 
-      radial-gradient(closest-side, rgb(132, 4, 126), transparent 80% 100%, white 0),
-      conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-    animation: col-2-progress 2s 1 forwards;
-  }
-  
+
+
   .col-2::before {
     animation: col-2-progress 2s 1 forwards;
   }
   
-  .col-3 {
-    background: 
-      radial-gradient(closest-side, rgb(132, 4, 126), transparent 80% 100%, white 0),
-      conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-    animation: col-3-progress 2s 1 forwards;
-  }
-  
+ 
+
   .col-3::before {
     animation: col-3-progress 2s 1 forwards;
   }
 
-  .col-4 {
-    background: 
-      radial-gradient(closest-side, rgb(132, 4, 126), transparent 80% 100%, white 0),
-      conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-    animation: col-4-progress 2s 1 forwards;
-  }
   
   .col-4::before {
     animation: col-4-progress 2s 1 forwards;
   }
   
-  /* body {
-    font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif; */
   
   h2 {
     text-align: left;
@@ -578,7 +560,7 @@ h2{
     height: 200px;
     width: 200px;
     float: left;
-    margin-right:10px;
+    margin-right:30px;
   }
 
   /*project sec start*/
@@ -774,8 +756,8 @@ h2{
 
 .contact-form form .send:hover{
     box-shadow: 0 0 5px rgb(77, 12, 141),
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+    0 0 25px cyan, 0 0 30px cyan,
+    0 0 35px cyan, 0 0 40px cyan;
 }
 
 @media screen and (max-width: 991px){
